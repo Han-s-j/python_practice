@@ -9,6 +9,7 @@
 문자열 '." 상관없음
 ''' 문장열  ''' 하면 공백까지 문자열에 포함 (긴 문자열 쓸 때 유용)
 다운 받을 때 PyCharm Community Edition 다운받기
+사진 참고
 conda --version 터미널에서 설치확인
 conda env list 가상환경 
 conda create --name tech9 python=3.9 가상환경 만들기 tech9은 이름
