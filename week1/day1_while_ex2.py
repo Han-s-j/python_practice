@@ -19,6 +19,10 @@ while chance > 0:
     elif num > user_num:
         print("업")
         chance -=1
+        # if chance != 0:
+        #     print("남은 기회:", chance)
+        # else:
+        #     print("다음 기회에....")
         if chance == 0:
             break
         print("남은 기회 ",chance)
@@ -32,3 +36,5 @@ while chance > 0:
         continue
 if chance == 0:
     print("다음 기회에.. 정답은: ", num)
+
+
