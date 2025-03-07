@@ -2,19 +2,17 @@ import tkinter as tk
 from tkinter import ttk     #향산된 tkinter
 
 import requests
-res = requests.get("https://open.er-api.com/v6/latest/USD")
-re_data = res.json()
-print(re_data)
+api_url ="https://open.er-api.com/v6/latest/USD"
+data = api_url.json()
+print(data)
 # exchange_rate = re_data['rates']['KRW'] # 현재환율
-ex_rates = {
-    "KRW": re_data['rates']['KRW']
-    ,"JPY": re_data['rates']['JPY']
-    ,"CNY": re_data['rates']['CNY']
-}
+ex_rates = data['rates']
+
 def convert_currency():
     print('달러',entry_usd.get())
     print('콤보박스 선택', currency.get())
-    result.config(text= entry_usd.get()+' USD'+'=')
+    user_usd = entry_usd.get() / ex_rates
+    result.config(text= entry_usd.get()+' USD'+'='+str(user_usd))
 app = tk.Tk()
 app.title("환율 변환기")
 app.geometry("300x200")
