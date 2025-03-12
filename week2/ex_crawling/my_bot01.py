@@ -1,7 +1,7 @@
 # pip install python-telegram-bot==13.11
 from week2.ex_crawling.bs4_cgv import img_path
 
-API_KEY = '8072220823:AAGYahbN1au59JWdKjGvm7ueRasYCAL6KGw'
+API_KEY = ''
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Updater, CallbackQueryHandler
 from telegram.ext import MessageHandler, Filters, CommandHandler
