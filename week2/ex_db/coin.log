@@ -1,0 +1,7 @@
+2025-03-12 17:22:20,521 - job_get_coin - INFO - 코인 데이터 저장 시작
+2025-03-12 17:22:26,178 - job_get_coin - ERROR - 에러 발생!:database is locked
+2025-03-12 17:22:26,179 - job_get_coin - INFO - 저장 완료!!
+2025-03-12 17:32:20,507 - job_get_coin - INFO - 코인 데이터 저장 시작
+2025-03-12 17:32:39,663 - job_get_coin - INFO - 저장 완료!!
+2025-03-12 17:42:20,522 - job_get_coin - INFO - 코인 데이터 저장 시작
+2025-03-12 17:42:39,571 - job_get_coin - INFO - 저장 완료!!
