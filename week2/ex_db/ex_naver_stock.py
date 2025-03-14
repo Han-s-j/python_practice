@@ -1,8 +1,8 @@
 import requests
 import  json
 import cx_Oracle
-
-conn = cx_Oracle.connect('member','oracle', "localhost:1521/xe")
+from mylogger import make_logger
+conn = cx_Oracle.connect("member","member", "localhost:1521/xe")
 cur = conn.cursor()
 cur.execute("SELECT * FROM tb_stocks")
 sql = """ 
