@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
 import cx_Oracle
-
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 # oracle 연결
 conn = cx_Oracle.connect("jdbc","jdbc", "localhost:1521/xe")
 cur = conn.cursor()
